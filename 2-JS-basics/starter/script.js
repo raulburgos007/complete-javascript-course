@@ -12,14 +12,20 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 
 GOOD LUCK 😀 
 */
-var markMass, markHeight, markBMI, johnMass, johnHeight, johnBMI = 0;
-markMass = 75;
-markHeight = 1.72;
-johnMass = 62;
-johnHeight = 1.65;
-markBMI = markMass / (markHeight * markHeight);
-johnBMI = johnMass / (johnHeight * johnHeight);
-var markIsHigher = markBMI > johnBMI;
+var markMass = 72;
+var markHeight = 1.70;
+var johnMass = 75;
+var johnHeight = 1.72;
+var markBMI = markMass / (markHeight * markHeight);
+var johnBMI = johnMass / (johnHeight * johnHeight);
 console.log('Mark\'s BMI is: ' + markBMI);
 console.log('John\'s BMI is: ' + johnBMI);
-console.log('Is Mark\'s BMI higher than John\'s?: ' + markIsHigher);
+console.log(markBMI, johnBMI);
+if (markBMI>johnBMI) {
+    console.log('Mark\'s BMI is higher than John\'s BMI');
+} else if (markBMI<johnBMI) {
+        console.log('John\'s BMI is higher than Mark\'s BMI');    
+    } else {
+        console.log('John\'s BMI is equal to Mark\'s BMI');      
+    }
+
